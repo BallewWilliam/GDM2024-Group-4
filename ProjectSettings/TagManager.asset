@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Spell
+  - Steel
+  - HP
+  - HP 2
   layers:
   - Default
   - TransparentFX
