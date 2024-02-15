@@ -7,24 +7,27 @@ public class Health : MonoBehaviour
 {
     public Image healthBar;
     public float healthAmount = 100;
+    public Button spellButton;
 
     private void Update()
     {
+
         if(healthAmount <= 0)
         {
             Application.LoadLevel(Application.loadedLevel);
-        }
-
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            TakeDamage(20);
         }
     }
 
     public void TakeDamage(float Damage)
     {
+        Damage = 5;
         healthAmount -= Damage;
         healthBar.fillAmount = healthAmount / 100;
     }
 
+    public void OnSpellButtonClick()
+    {
+        Debug.Log ("Success");
+
+    }
 }
