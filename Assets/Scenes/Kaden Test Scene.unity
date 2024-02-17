@@ -133,8 +133,10 @@ GameObject:
   m_Component:
   - component: {fileID: 138680183}
   - component: {fileID: 138680184}
+  - component: {fileID: 138680185}
+  - component: {fileID: 138680186}
   m_Layer: 0
-  m_Name: ButtonManager
+  m_Name: Spell Cast  (P1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,6 +171,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button1: {fileID: 1423588720}
   button2: {fileID: 759833248}
+  healthScript: {fileID: 1340299959}
+--- !u!114 &138680185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138680182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 1705624634}
+  button2: {fileID: 1433429852}
+  healthScript: {fileID: 1340299959}
+--- !u!114 &138680186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138680182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 623911927}
+  button2: {fileID: 878017026}
+  healthScript: {fileID: 1340299959}
 --- !u!1001 &193011906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -203,7 +236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134135317254769039, guid: 185f228e55cc25b4694b95576219d772, type: 3}
       propertyPath: m_Name
-      value: UI HP
+      value: Player 2
       objectReference: {fileID: 0}
     - target: {fileID: 5289847617979893943, guid: 185f228e55cc25b4694b95576219d772, type: 3}
       propertyPath: m_Pivot.x
@@ -292,6 +325,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5289847617979893943, guid: 185f228e55cc25b4694b95576219d772, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1340299960}
     - targetCorrespondingSourceObject: {fileID: 5289847617979893943, guid: 185f228e55cc25b4694b95576219d772, type: 3}
       insertIndex: -1
       addedObject: {fileID: 806628616}
@@ -533,19 +569,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 368833779}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280960}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &368833779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,19 +824,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 623911928}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280958}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &623911928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -933,19 +945,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 759833249}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280958}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &759833249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1066,19 +1066,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 806628618}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280960}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &806628618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1199,19 +1187,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 878017027}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280958}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &878017027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,19 +1308,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 990377052}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280960}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &990377052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,6 +1749,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202980073}
   m_CullTransparentMesh: 1
+--- !u!1 &1219869918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219869922}
+  - component: {fileID: 1219869921}
+  - component: {fileID: 1219869920}
+  - component: {fileID: 1219869919}
+  m_Layer: 0
+  m_Name: Spell Cast 2 (P2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1219869919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219869918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 1588258131}
+  button2: {fileID: 2033233891}
+  healthScript: {fileID: 2014280958}
+--- !u!114 &1219869920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219869918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 368833778}
+  button2: {fileID: 990377051}
+  healthScript: {fileID: 2014280958}
+--- !u!114 &1219869921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219869918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 806628617}
+  button2: {fileID: 1991163600}
+  healthScript: {fileID: 2014280958}
+--- !u!4 &1219869922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219869918}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 110.522415, y: 98.90657, z: -1.0266418}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1248498029
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,6 +2054,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1340299958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1340299960}
+  - component: {fileID: 1340299959}
+  m_Layer: 0
+  m_Name: HealthManager (P2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1340299959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340299958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd92c4ad63a2f134189b931daa809226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1929494971}
+  healthAmount: 100
+--- !u!4 &1340299960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340299958}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 294.25, y: 137.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 193011907}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1373020479 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 891026844099697560, guid: 185f228e55cc25b4694b95576219d772, type: 3}
@@ -2104,19 +2193,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1423588721}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280958}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &1423588721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2237,19 +2314,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1433429853}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280958}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &1433429853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2370,19 +2435,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1588258132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280960}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &1588258132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2642,19 +2695,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1705624635}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280958}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &1705624635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3056,19 +3097,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1991163601}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280960}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &1991163601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3119,7 +3148,7 @@ GameObject:
   - component: {fileID: 2014280958}
   - component: {fileID: 2014280960}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: HealthManager (P1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3139,7 +3168,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1373020479}
   healthAmount: 100
-  spellButton: {fileID: 1423588720}
 --- !u!4 &2014280959
 Transform:
   m_ObjectHideFlags: 0
@@ -3148,12 +3176,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014280957}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 538.5, y: 313, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 294.25, y: 137.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1600287047}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2014280960
 MonoBehaviour:
@@ -3169,7 +3197,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1929494971}
   healthAmount: 100
-  spellButton: {fileID: 806628617}
 --- !u!1 &2033233889
 GameObject:
   m_ObjectHideFlags: 0
@@ -3252,19 +3279,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2033233892}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014280960}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: TakeDamage
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
 --- !u!114 &2033233892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3809,7 +3824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134135317254769039, guid: 185f228e55cc25b4694b95576219d772, type: 3}
       propertyPath: m_Name
-      value: Player HP
+      value: Player 1
       objectReference: {fileID: 0}
     - target: {fileID: 5289847617979893943, guid: 185f228e55cc25b4694b95576219d772, type: 3}
       propertyPath: m_Pivot.x
@@ -3900,6 +3915,9 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5289847617979893943, guid: 185f228e55cc25b4694b95576219d772, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 2014280959}
+    - targetCorrespondingSourceObject: {fileID: 5289847617979893943, guid: 185f228e55cc25b4694b95576219d772, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1423588719}
     - targetCorrespondingSourceObject: {fileID: 5289847617979893943, guid: 185f228e55cc25b4694b95576219d772, type: 3}
       insertIndex: -1
@@ -3926,5 +3944,5 @@ SceneRoots:
   - {fileID: 6265097991148055504}
   - {fileID: 193011906}
   - {fileID: 2056255907}
-  - {fileID: 2014280959}
   - {fileID: 138680183}
+  - {fileID: 1219869922}
