@@ -135,6 +135,9 @@ GameObject:
   - component: {fileID: 138680184}
   - component: {fileID: 138680185}
   - component: {fileID: 138680186}
+  - component: {fileID: 138680189}
+  - component: {fileID: 138680191}
+  - component: {fileID: 138680190}
   m_Layer: 0
   m_Name: Spell Cast  (P1)
   m_TagString: Untagged
@@ -202,6 +205,51 @@ MonoBehaviour:
   button1: {fileID: 623911927}
   button2: {fileID: 878017026}
   healthScript: {fileID: 1340299959}
+--- !u!114 &138680189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138680182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 1423588720}
+  button2: {fileID: 759833248}
+  healthScript: {fileID: 2014280958}
+--- !u!114 &138680190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138680182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 623911927}
+  button2: {fileID: 878017026}
+  healthScript: {fileID: 2014280958}
+--- !u!114 &138680191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138680182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 1705624634}
+  button2: {fileID: 1433429852}
+  healthScript: {fileID: 2014280958}
 --- !u!1001 &193011906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1761,6 +1809,9 @@ GameObject:
   - component: {fileID: 1219869921}
   - component: {fileID: 1219869920}
   - component: {fileID: 1219869919}
+  - component: {fileID: 1219869925}
+  - component: {fileID: 1219869924}
+  - component: {fileID: 1219869923}
   m_Layer: 0
   m_Name: Spell Cast 2 (P2)
   m_TagString: Untagged
@@ -1828,6 +1879,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1219869923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219869918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 1588258131}
+  button2: {fileID: 2033233891}
+  healthScript: {fileID: 1340299959}
+--- !u!114 &1219869924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219869918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 368833778}
+  button2: {fileID: 990377051}
+  healthScript: {fileID: 1340299959}
+--- !u!114 &1219869925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219869918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 806628617}
+  button2: {fileID: 1991163600}
+  healthScript: {fileID: 1340299959}
 --- !u!1 &1248498029
 GameObject:
   m_ObjectHideFlags: 0
