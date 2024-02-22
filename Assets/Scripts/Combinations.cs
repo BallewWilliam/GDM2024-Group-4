@@ -18,7 +18,7 @@ public enum SpellType
 	Air
 }
 
-public class SpellCombos : MonoBehaviour
+public class Combinations : MonoBehaviour
 {
 	public Button spellButton1;
 	public Button spellButton2;
@@ -50,7 +50,7 @@ public class SpellCombos : MonoBehaviour
 			int playerDamage = CalculateDamage(playerSpell1, playerSpell2, opponentSpell1, opponentSpell2);
 
 			// Reduce opponent's health based on calculated damage
-			healthScript.TakeDamage(playerDamage);
+			//healthScript.TakeDamage(damage);
 
 			// Reset spell selections for future rounds
 			ResetSpellSelections();

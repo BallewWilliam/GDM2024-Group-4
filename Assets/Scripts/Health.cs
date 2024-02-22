@@ -5,21 +5,21 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public Image healthBar;
-    public float healthAmount = 100;
+	public Image healthBar;
+	public float healthAmount;
 
-    private void Update()
-    {
+	private void Update()
+	{
+		if (healthAmount <= 0)
+		{
+			Application.LoadLevel(Application.loadedLevel);
+		}
+	}
 
-        if(healthAmount <= 0)
-        {
-            Application.LoadLevel(Application.loadedLevel);
-        }
-    }
-
-    public void TakeDamage(float Damage)
-    {
-        healthAmount -= Damage;
-        healthBar.fillAmount = healthAmount / 100;
-    }
+	public void TakeDamage()
+	{
+		float damage = GetComponent<SpellDamage>().damageAmount;
+		healthAmount -= damage;
+		healthBar.fillAmount = healthAmount / 10;
+	}
 }
