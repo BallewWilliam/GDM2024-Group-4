@@ -132,14 +132,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 138680183}
-  - component: {fileID: 138680184}
   - component: {fileID: 138680185}
-  - component: {fileID: 138680186}
-  - component: {fileID: 138680189}
-  - component: {fileID: 138680191}
-  - component: {fileID: 138680190}
+  - component: {fileID: 138680198}
+  - component: {fileID: 138680184}
+  - component: {fileID: 138680196}
+  - component: {fileID: 138680195}
+  - component: {fileID: 138680197}
+  - component: {fileID: 138680194}
+  - component: {fileID: 138680193}
   m_Layer: 0
-  m_Name: Spell Cast  (P1)
+  m_Name: Zero Damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,8 +175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1423588720}
-  button2: {fileID: 759833248}
-  healthScript: {fileID: 1340299959}
+  button2: {fileID: 806628617}
+  damageAmount: 0
 --- !u!114 &138680185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,13 +186,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 138680182}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd92c4ad63a2f134189b931daa809226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1373020479}
+  healthAmount: 10
+--- !u!114 &138680193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138680182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button1: {fileID: 1705624634}
-  button2: {fileID: 1433429852}
-  healthScript: {fileID: 1340299959}
---- !u!114 &138680186
+  button1: {fileID: 878017026}
+  button2: {fileID: 2033233891}
+  damageAmount: 0
+--- !u!114 &138680194
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,39 +219,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 623911927}
-  button2: {fileID: 878017026}
-  healthScript: {fileID: 1340299959}
---- !u!114 &138680189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138680182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button1: {fileID: 1423588720}
-  button2: {fileID: 759833248}
-  healthScript: {fileID: 2014280958}
---- !u!114 &138680190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138680182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button1: {fileID: 623911927}
-  button2: {fileID: 878017026}
-  healthScript: {fileID: 2014280958}
---- !u!114 &138680191
+  button2: {fileID: 1588258131}
+  damageAmount: 0
+--- !u!114 &138680195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,8 +234,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1705624634}
-  button2: {fileID: 1433429852}
-  healthScript: {fileID: 2014280958}
+  button2: {fileID: 368833778}
+  damageAmount: 0
+--- !u!114 &138680196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138680182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 759833248}
+  button2: {fileID: 1991163600}
+  damageAmount: 0
+--- !u!114 &138680197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138680182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 1433429852}
+  button2: {fileID: 990377051}
+  damageAmount: 0
+--- !u!114 &138680198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138680182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd92c4ad63a2f134189b931daa809226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1929494971}
+  healthAmount: 10
 --- !u!1001 &193011906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -373,9 +403,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5289847617979893943, guid: 185f228e55cc25b4694b95576219d772, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1340299960}
     - targetCorrespondingSourceObject: {fileID: 5289847617979893943, guid: 185f228e55cc25b4694b95576219d772, type: 3}
       insertIndex: -1
       addedObject: {fileID: 806628616}
@@ -1806,6 +1833,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1219869922}
+  - component: {fileID: 1219869927}
+  - component: {fileID: 1219869926}
   - component: {fileID: 1219869921}
   - component: {fileID: 1219869920}
   - component: {fileID: 1219869919}
@@ -1813,7 +1842,7 @@ GameObject:
   - component: {fileID: 1219869924}
   - component: {fileID: 1219869923}
   m_Layer: 0
-  m_Name: Spell Cast 2 (P2)
+  m_Name: x0.5 Damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1831,9 +1860,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button1: {fileID: 1588258131}
-  button2: {fileID: 2033233891}
-  healthScript: {fileID: 2014280958}
+  button1: {fileID: 1705624634}
+  button2: {fileID: 1588258131}
+  damageAmount: 0.5
 --- !u!114 &1219869920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1846,9 +1875,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button1: {fileID: 368833778}
+  button1: {fileID: 759833248}
   button2: {fileID: 990377051}
-  healthScript: {fileID: 2014280958}
+  damageAmount: 0.5
 --- !u!114 &1219869921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1861,9 +1890,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button1: {fileID: 806628617}
-  button2: {fileID: 1991163600}
-  healthScript: {fileID: 2014280958}
+  button1: {fileID: 1423588720}
+  button2: {fileID: 368833778}
+  damageAmount: 0.5
 --- !u!4 &1219869922
 Transform:
   m_ObjectHideFlags: 0
@@ -1891,9 +1920,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button1: {fileID: 1588258131}
-  button2: {fileID: 2033233891}
-  healthScript: {fileID: 1340299959}
+  button1: {fileID: 878017026}
+  button2: {fileID: 1991163600}
+  damageAmount: 0.5
 --- !u!114 &1219869924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1906,9 +1935,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button1: {fileID: 368833778}
-  button2: {fileID: 990377051}
-  healthScript: {fileID: 1340299959}
+  button1: {fileID: 623911927}
+  button2: {fileID: 806628617}
+  damageAmount: 0.5
 --- !u!114 &1219869925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1921,9 +1950,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc15550c956212349abab1cc5e72c10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button1: {fileID: 806628617}
-  button2: {fileID: 1991163600}
-  healthScript: {fileID: 1340299959}
+  button1: {fileID: 1433429852}
+  button2: {fileID: 2033233891}
+  damageAmount: 0.5
+--- !u!114 &1219869926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219869918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd92c4ad63a2f134189b931daa809226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1929494971}
+  healthAmount: 10
+--- !u!114 &1219869927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219869918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd92c4ad63a2f134189b931daa809226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1373020479}
+  healthAmount: 10
 --- !u!1 &1248498029
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,52 +2206,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1340299958
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1340299960}
-  - component: {fileID: 1340299959}
-  m_Layer: 0
-  m_Name: HealthManager (P2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1340299959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340299958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd92c4ad63a2f134189b931daa809226, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 1929494971}
-  healthAmount: 100
---- !u!4 &1340299960
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340299958}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 294.25, y: 137.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 193011907}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1373020479 stripped
 MonoBehaviour:
@@ -3232,67 +3243,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991163598}
   m_CullTransparentMesh: 1
---- !u!1 &2014280957
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2014280959}
-  - component: {fileID: 2014280958}
-  - component: {fileID: 2014280960}
-  m_Layer: 0
-  m_Name: HealthManager (P1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2014280958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2014280957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd92c4ad63a2f134189b931daa809226, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 1373020479}
-  healthAmount: 100
---- !u!4 &2014280959
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2014280957}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 294.25, y: 137.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1600287047}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2014280960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2014280957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd92c4ad63a2f134189b931daa809226, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 1929494971}
-  healthAmount: 100
 --- !u!1 &2033233889
 GameObject:
   m_ObjectHideFlags: 0
@@ -4066,9 +4016,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5289847617979893943, guid: 185f228e55cc25b4694b95576219d772, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2014280959}
     - targetCorrespondingSourceObject: {fileID: 5289847617979893943, guid: 185f228e55cc25b4694b95576219d772, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1423588719}

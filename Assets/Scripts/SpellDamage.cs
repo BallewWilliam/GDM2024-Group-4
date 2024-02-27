@@ -3,19 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SpellChoiceTracker : MonoBehaviour
+public class SpellDamage : MonoBehaviour
 {
 	public Button button1;
 	public Button button2;
-	public Health healthScript; // References to the Health script
+	public float damageAmount;
 
 	private bool button1Clicked;
 	private bool button2Clicked;
+	private Health healthScript; // Reference to the Health script
+
 
 	void Start()
 	{
 		button1.onClick.AddListener(OnButton1Click);
 		button2.onClick.AddListener(OnButton2Click);
+
+		// Get the Health script component
+		healthScript = GetComponent<Health>();
 	}
 
 	void Update()
@@ -26,13 +31,18 @@ public class SpellChoiceTracker : MonoBehaviour
 			// Does something when both buttons are clicked
 			Debug.Log("Both buttons are clicked!");
 
-			// Reduces health when both buttons are clicked
-			healthScript.TakeDamage(10); // You can adjust the damage value as needed
-
+			 // Set the damage globally using the SpellDamage script
+            healthScript.TakeDamage();
+		
 			// Resets button states for future clicks
 			button1Clicked = false;
 			button2Clicked = false;
 		}
+	}
+
+	public void DealDamage(float Damage)
+	{
+		damageAmount = Damage;
 	}
 
 	void OnButton1Click()
