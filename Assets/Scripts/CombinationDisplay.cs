@@ -29,6 +29,10 @@ public class CombinationDisplay : MonoBehaviour
     private void FixedUpdate()
     {
         Combine();
+        if (element_1.text == element_2.text)
+        {
+            element2 = false;
+        }
     }
 
     public void PrintFire()
