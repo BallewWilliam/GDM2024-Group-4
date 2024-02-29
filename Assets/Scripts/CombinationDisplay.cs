@@ -11,6 +11,7 @@ public class CombinationDisplay : MonoBehaviour
     public TMP_Text element;
     public TMP_Text element_1;
     public TMP_Text element_2;
+    public GameObject HealthBar;
     public bool element1;
     public bool element2;
     public bool air;
@@ -100,7 +101,7 @@ public class CombinationDisplay : MonoBehaviour
     {
         if (air && water)
         {
-            element.text = "Lightning";
+            element.text = "Storm";
             air = false;
             water = false;
             element1 = false; element2 = false;
