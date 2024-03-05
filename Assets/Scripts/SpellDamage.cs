@@ -31,9 +31,9 @@ public class SpellDamage : MonoBehaviour
 			// Does something when both buttons are clicked
 			Debug.Log("Both buttons are clicked!");
 
-			 // Set the damage globally using the SpellDamage script
-            healthScript.TakeDamage();
-		
+			// Set the damage globally using the SpellDamage script
+			healthScript.TakeDamage(damageAmount);
+
 			// Resets button states for future clicks
 			button1Clicked = false;
 			button2Clicked = false;
