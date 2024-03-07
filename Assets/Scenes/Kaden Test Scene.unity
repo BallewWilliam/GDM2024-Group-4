@@ -1664,6 +1664,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878017024}
   m_CullTransparentMesh: 1
+--- !u!1 &923080484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6038150501383551004, guid: e5fa2fc0477b5ce47becd1bb508be59b, type: 3}
+  m_PrefabInstance: {fileID: 1263564265}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &957215583
 GameObject:
   m_ObjectHideFlags: 0
@@ -2849,13 +2854,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6038150501383551004, guid: e5fa2fc0477b5ce47becd1bb508be59b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1263564274}
   m_SourcePrefab: {fileID: 100100000, guid: e5fa2fc0477b5ce47becd1bb508be59b, type: 3}
 --- !u!4 &1263564266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7865091921547703699, guid: e5fa2fc0477b5ce47becd1bb508be59b, type: 3}
   m_PrefabInstance: {fileID: 1263564265}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1263564274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923080484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a7d3df9d372a348ac9475a75f30a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RadNum: 0
+  Steel2: 0
+  Tornado2: 0
+  Steam2: 0
+  Flamethrower2: 0
+  Ice2: 0
+  Storm2: 0
 --- !u!1 &1294173730
 GameObject:
   m_ObjectHideFlags: 0
