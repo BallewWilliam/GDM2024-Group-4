@@ -16,10 +16,9 @@ public class Health : MonoBehaviour
 		}
 	}
 
-	public void TakeDamage()
-	{
-		float damage = GetComponent<SpellDamage>().damageAmount;
-		healthAmount -= damage;
-		healthBar.fillAmount = healthAmount / 10;
-	}
+	public void TakeDamage(float damage) // Added the 'float damage' parameter
+    {
+        healthAmount -= damage;
+        healthBar.fillAmount = healthAmount / 10;
+    }
 }

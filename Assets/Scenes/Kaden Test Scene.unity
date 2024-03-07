@@ -828,8 +828,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 0.7877358, b: 0.7877358, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.8349056, b: 0.8349056, a: 1}
+    m_NormalColor: {r: 0.9245283, g: 0.76753294, b: 0.76753294, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.78823537, b: 0.78823537, a: 1}
     m_PressedColor: {r: 0.7169812, g: 0.6189036, b: 0.6189036, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1240,9 +1240,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5188679, g: 0.50907797, b: 0.50907797, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1362,8 +1362,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
-    m_HighlightedColor: {r: 0.8113208, g: 0.8074938, b: 0.8074938, a: 1}
-    m_PressedColor: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
+    m_HighlightedColor: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
+    m_PressedColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1664,6 +1664,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878017024}
   m_CullTransparentMesh: 1
+--- !u!1 &923080484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6038150501383551004, guid: e5fa2fc0477b5ce47becd1bb508be59b, type: 3}
+  m_PrefabInstance: {fileID: 1263564265}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &957215583
 GameObject:
   m_ObjectHideFlags: 0
@@ -2849,13 +2854,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6038150501383551004, guid: e5fa2fc0477b5ce47becd1bb508be59b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1263564274}
   m_SourcePrefab: {fileID: 100100000, guid: e5fa2fc0477b5ce47becd1bb508be59b, type: 3}
 --- !u!4 &1263564266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7865091921547703699, guid: e5fa2fc0477b5ce47becd1bb508be59b, type: 3}
   m_PrefabInstance: {fileID: 1263564265}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1263564274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923080484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a7d3df9d372a348ac9475a75f30a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RadNum: 0
+  Steel2: 0
+  Tornado2: 0
+  Steam2: 0
+  Flamethrower2: 0
+  Ice2: 0
+  Storm2: 0
 --- !u!1 &1294173730
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,8 +3097,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
-    m_HighlightedColor: {r: 0.8113208, g: 0.8074938, b: 0.8074938, a: 1}
-    m_PressedColor: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
+    m_HighlightedColor: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
+    m_PressedColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -3689,8 +3716,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 0.7877358, b: 0.7877358, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.8352941, b: 0.8352941, a: 1}
+    m_NormalColor: {r: 0.9245283, g: 0.76753294, b: 0.76753294, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.78823537, b: 0.78823537, a: 1}
     m_PressedColor: {r: 0.7169812, g: 0.6189036, b: 0.6189036, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4204,9 +4231,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5188679, g: 0.50907797, b: 0.50907797, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
