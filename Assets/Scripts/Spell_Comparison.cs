@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,12 +20,16 @@ public class Spell_Comparison : MonoBehaviour
     public bool Storm2;
     public Image P1_Health;
     public Image P2_Health;
+    public TMP_Text P1_Health_text;
+    public TMP_Text P2_Health_text;
     public float P1_Health_Amount;
     public float P2_Health_Amount;
 
     private void FixedUpdate()
     {
         Compare();
+        P1_Health_text.SetText(P1_Health_Amount.ToString());
+        P2_Health_text.SetText(P2_Health_Amount.ToString());
     }   
 
     void Compare()
