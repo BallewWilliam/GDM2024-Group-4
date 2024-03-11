@@ -29,33 +29,33 @@ public class EnemyAI : MonoBehaviour
 		if(RadNum == 1)
 		{
 			Steel2 = true;
-			Debug.Log("Steel2 Selected!");
+			//Debug.Log("Steel2 Selected!");
 		}
 		if (RadNum == 2)
 		{
 			Tornado2 = true;
-			Debug.Log("Tornado2 Selected!");
+			//Debug.Log("Tornado2 Selected!");
 		}
 		if (RadNum == 3)
 		{
 			Steam2 = true;
-			Debug.Log("Steam2 Selected!");
+			//Debug.Log("Steam2 Selected!");
 		}
 		if (RadNum == 4)
 		{
 			Flamethrower2 = true;
-			Debug.Log("Flamethrower2 Selected!");
+			//Debug.Log("Flamethrower2 Selected!");
 
 		}
 		if (RadNum == 5)
 		{
 			Ice2 = true;
-			Debug.Log("Ice2 Selected!");
+			//Debug.Log("Ice2 Selected!");
 		}
 		if (RadNum == 6)
 		{
 			Storm2 = true;
-			Debug.Log("Storm2 Selected!");
+			//Debug.Log("Storm2 Selected!");
 		}
 	}
 }
