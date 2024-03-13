@@ -22,6 +22,7 @@ public class Spell_Comparison : MonoBehaviour
     public Image P2_Health;
     public TMP_Text P1_Health_text;
     public TMP_Text P2_Health_text;
+    public TMP_Text Damage;
     public float P1_Health_Amount;
     public float P2_Health_Amount;
 
@@ -38,6 +39,7 @@ public class Spell_Comparison : MonoBehaviour
         {
             Steel1 = false;
             Steel2 = false;
+            Damage.text = "It's a Tie!";
         }
         if (Steel1 && Tornado2)
         {
@@ -45,6 +47,7 @@ public class Spell_Comparison : MonoBehaviour
             P2_Health.fillAmount = P2_Health_Amount / 10;
             Steel1 = false;
             Tornado2 = false;
+            Damage.text = "Steel deals 2 damage!!";
         }
         if (Steel1 && Steam2)
         {
@@ -54,6 +57,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Steel1 = false;
             Steam2 = false;
+            Damage.text = "Steel deals 1.5 damage, Tornado deals 0.5 damage.";
         }
         if (Steel1 && Flamethrower2)
         {
@@ -63,6 +67,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Steel1 = false;
             Flamethrower2 = false;
+            Damage.text = "Steel deals 1 damage, Flamethrower deals 1 damage.";
         }
         if (Steel1 && Ice2)
         {
@@ -72,6 +77,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Steel1 = false;
             Ice2 = false;
+            Damage.text = "Steel deals 0.5 damage, Ice deals 1.5 damage.";
         }
         if (Steel1 && Storm2)
         {
@@ -79,6 +85,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Steel1 = false;
             Storm2 = false;
+            Damage.text = "Storm deals 2 damage!!";
         }
 
         if (Tornado1 && Steel2)
@@ -87,11 +94,13 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P2_Health_Amount / 10;
             Tornado1 = false;
             Steel2 = false;
+            Damage.text = "Steel deals 2 damage!";
         }
         if (Tornado1 && Tornado2)
         {
             Tornado1 = false;
             Tornado2 = false;
+            Damage.text = "Its a Tie!";
         }
         if (Tornado1 && Steam2)
         {
@@ -99,6 +108,7 @@ public class Spell_Comparison : MonoBehaviour
             P2_Health.fillAmount = P2_Health_Amount / 10;
             Tornado1 = false;
             Steam2 = false;
+            Damage.text = "Tornado deals 2 damage!!";
         }
         if (Tornado1 && Flamethrower2)
         {
@@ -108,6 +118,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Tornado1 = false;
             Flamethrower2 = false;
+            Damage.text = "Tornado deals 1.5 damage, Flamethrower deals 0.5 damage.";
         }
         if (Tornado1 && Ice2)
         {
@@ -117,6 +128,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Tornado1 = false;
             Ice2 = false;
+            Damage.text = "Tornado deals 1 damage, Ice deals 1 damage.";
         }
         if (Tornado1 && Storm2)
         {
@@ -126,6 +138,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Tornado1 = false;
             Storm2 = false;
+            Damage.text = "Tornado deals 0.5 damage, Storm deals 1.5 damage.";
         }
 
         if (Steam1 && Steel2)
@@ -136,6 +149,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Steam1 = false;
             Steel2 = false;
+            Damage.text = "Steam deals 0.5 damage, Steel deals 1.5 damage.";
         }
         if (Steam1 && Tornado2)
         {
@@ -143,11 +157,13 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Steam1 = false;
             Tornado2 = false;
+            Damage.text = "Tornado deals 2 damage!!";
         }
         if (Steam1 && Steam2)
         {
             Steam1 = false;
             Steam2 = false;
+            Damage.text = "It's a Tie!";
         }
         if (Steam1 && Flamethrower2)
         {
@@ -155,6 +171,7 @@ public class Spell_Comparison : MonoBehaviour
             P2_Health.fillAmount = P2_Health_Amount / 10;
             Steam1 = false;
             Flamethrower2 = false;
+            Damage.text = "Steam deals 2 damage!!";
         }
         if (Steam1 && Ice2)
         {
@@ -164,6 +181,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Steam1 = false;
             Ice2 = false;
+            Damage.text = "Steam deals 1.5 damage, Ice deals 0.5 damage.";
         }
         if (Steam1 && Storm2)
         {
@@ -173,6 +191,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Steam1 = false;
             Storm2 = false;
+            Damage.text = "Steam deals 1 damage, Storm deals 1 damage.";
         }
 
         if (Flamethrower1 && Steel2)
@@ -183,6 +202,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Flamethrower1 = false;
             Steel2 = false;
+            Damage.text = "Flamethrower deals 1 damage, Steel deals 1 damage.";
         }
         if (Flamethrower1 && Tornado2)
         {
@@ -192,6 +212,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Flamethrower1 = false;
             Tornado2 = false;
+            Damage.text = "Flamethrower deals 0.5 damage, Tornado deals 1.5 damage.";
         }
         if (Flamethrower1 && Steam2)
         {
@@ -199,11 +220,13 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Flamethrower1 = false;
             Steam2 = false;
+            Damage.text = "Steam deals 2 damage!!";
         }
         if (Flamethrower1 && Flamethrower2)
         {
             Flamethrower1 = false;
             Flamethrower2 = false;
+            Damage.text = "It's a Tie!";
         }
         if (Flamethrower1 && Ice2)
         {
@@ -211,6 +234,7 @@ public class Spell_Comparison : MonoBehaviour
             P2_Health.fillAmount = P1_Health_Amount / 10;
             Flamethrower1 = false;
             Ice2 = false;
+            Damage.text = "Flamethrower deals 2 damage!!";
         }
         if (Flamethrower1 && Storm2)
         {
@@ -220,6 +244,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Flamethrower1 = false;
             Storm2 = false;
+            Damage.text = "Flamethrower deals 1.5 damage, Storm deals 0.5 damage.";
         }
 
         if (Ice1 && Steel2)
@@ -230,6 +255,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Ice1 = false;
             Steel2 = false;
+            Damage.text = "Ice deals 1.5 damage, Steel deals 0.5 damage.";
         }
         if (Ice1 && Tornado2)
         {
@@ -239,6 +265,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Ice1 = false;
             Tornado2 = false;
+            Damage.text = "Ice deals 1 damage, Tornado deals 1 damage";
         }
         if (Ice1 && Steam2)
         {
@@ -248,6 +275,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Ice1 = false;
             Steam2 = false;
+            Damage.text = "Ice deals 0.5 damage, Steam deals 1.5 damage.";
         }
         if (Ice1 && Flamethrower2)
         {
@@ -255,11 +283,13 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Ice1 = false;
             Flamethrower2 = false;
+            Damage.text = "Flamethrower deals 2 damage!!";
         }
         if (Ice1 && Ice2)
         {
             Ice1 = false;
             Ice2 = false;
+            Damage.text = "It's a Tie!";
         }
         if (Ice1 && Storm2)
         {
@@ -267,6 +297,7 @@ public class Spell_Comparison : MonoBehaviour
             P2_Health.fillAmount = P1_Health_Amount / 10;
             Ice1 = false;
             Storm2 = false;
+            Damage.text = "Ice deals 2 damage!!";
         }
 
         if (Storm1 && Steel2)
@@ -275,6 +306,7 @@ public class Spell_Comparison : MonoBehaviour
             P2_Health.fillAmount = P1_Health_Amount / 10;
             Storm1 = false;
             Steel2 = false;
+            Damage.text = "Storm deals 2 damage!!";
         }
         if (Storm1 && Tornado2)
         {
@@ -284,6 +316,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Storm1 = false;
             Tornado2 = false;
+            Damage.text = "Storm deals 1.5 damage, Tornado deals 0.5 damage.";
         }
         if (Storm1 && Steam2)
         {
@@ -293,6 +326,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Storm1 = false;
             Steam2 = false;
+            Damage.text = "Storm deals 1 damage, Steam deals 1 damage.";
         }
         if (Storm1 && Flamethrower2)
         {
@@ -302,6 +336,7 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Storm1 = false;
             Flamethrower2 = false;
+            Damage.text = "Storm deals 0.5 damage, Flamethrower deals 1.5 damage.";
         }
         if (Storm1 && Ice2)
         {
@@ -309,64 +344,14 @@ public class Spell_Comparison : MonoBehaviour
             P1_Health.fillAmount = P1_Health_Amount / 10;
             Storm1 = false;
             Ice2 = false;
+            Damage.text = "Ice deals 2 damage!!";
         }
         if (Storm1 && Storm2)
         {
             Storm1 = false;
             Storm2 = false;
+            Damage.text = "It's a Tie!";
         }
 
     }
-
-    public void Steel1T()
-    { 
-        Steel1 = true;
-
-    }
-    public void Steel2T() 
-    {
-        Steel2 = true;
-    }
-    public void Tornado1T()
-    {
-        Tornado1 = true;
-    }
-    public void Tornado2T()
-    {
-        Tornado2 = true;
-    }
-    public void Steam1T()
-    {
-        Steam1 = true;
-    }
-    public void Steam2T()
-    {
-        Steam2 = true;
-    }
-    public void Flamethrower1T()
-    {
-        Flamethrower1 = true;
-    }
-    public void Flamethrower2T()
-    {
-        Flamethrower2 = true;
-    }
-    public void Ice1T()
-    {
-        Ice1 = true;
-    }
-    public void Ice2T()
-    {
-        Ice2 = true;
-    }
-    public void Storm1T()
-    {
-        Storm1 = true;
-    }
-    public void Storm2T()
-    {
-        Storm2 = true;
-    }
-
-
 }
