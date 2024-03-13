@@ -1,22 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class EnemyAI : MonoBehaviour
 {
+	public GameObject Manager;
+	private Spell_Comparison spell;
+	public TMP_Text Combination2;
 	public float RadNum = 0f;
-	public bool Steel2;
-	public bool Tornado2;
-	public bool Steam2;
-	public bool Flamethrower2;
-	public bool Ice2;
-	public bool Storm2;
+	public bool p1_ready;
 
-	public void FixedUpdate()
+    private void Start()
+    {
+        spell = Manager.GetComponent<Spell_Comparison>();
+    }
+
+    public void FixedUpdate()
 	{
-		RNG();
-		Spells();
+		if (p1_ready)
+		{
+			RNG();
+			Spells();
+			AIDisplay();
+			p1_ready = false;
+		}
+	}
+
+	public void readyButton()
+	{
+		p1_ready = true;
 	}
 
 	public void RNG()
@@ -28,35 +43,50 @@ public class EnemyAI : MonoBehaviour
 	{
 		if(RadNum == 1)
 		{
-			Steel2 = true;
+			spell.Steel2 = true;
 			//Debug.Log("Steel2 Selected!");
 		}
 		if (RadNum == 2)
 		{
-			Tornado2 = true;
+			spell.Tornado2 = true;
 			//Debug.Log("Tornado2 Selected!");
 		}
 		if (RadNum == 3)
 		{
-			Steam2 = true;
+			spell.Steam2 = true;
 			//Debug.Log("Steam2 Selected!");
 		}
 		if (RadNum == 4)
 		{
-			Flamethrower2 = true;
+			spell.Flamethrower2 = true;
 			//Debug.Log("Flamethrower2 Selected!");
 
 		}
 		if (RadNum == 5)
 		{
-			Ice2 = true;
+			spell.Ice2 = true;
 			//Debug.Log("Ice2 Selected!");
 		}
 		if (RadNum == 6)
 		{
-			Storm2 = true;
+			spell.Storm2 = true;
 			//Debug.Log("Storm2 Selected!");
 		}
+	}
+	public void AIDisplay()
+	{
+		if (spell.Steel2)
+			Combination2.text = "Steel";
+		if (spell.Tornado2)
+			Combination2.text = "Tornado";
+		if (spell.Steam2)
+			Combination2.text = "Steam";
+		if (spell.Flamethrower2)
+			Combination2.text = "Flamethrower";
+		if (spell.Ice2)
+			Combination2.text = "Ice";
+		if (spell.Storm2)
+			Combination2.text = "Storm";
 	}
 }
 
