@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/C_Combination.unity
     guid: c0a96c899b733724b86f25df4d5e2a45
   - enabled: 0
@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/C_Combination.unity
     guid: c0a96c899b733724b86f25df4d5e2a45
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Kaden Test Scene.unity
     guid: 965b2e9eb4d0ddf4aa46f1ec55c15b5a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/C_Damage Art Scene.unity
     guid: e8cdc7bfe76afc64083087d3ce14909f
   - enabled: 1
