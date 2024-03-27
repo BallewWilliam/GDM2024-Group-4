@@ -2126,7 +2126,7 @@ RectTransform:
   m_GameObject: {fileID: 845291393}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.94453126, y: 0.94453126, z: 0.94453126}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 471119238}
@@ -2135,7 +2135,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 148.9832, y: 61.4565}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &845291395
 MonoBehaviour:
@@ -2214,13 +2214,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &845291397
@@ -4262,6 +4262,7 @@ MonoBehaviour:
   P2_Health: {fileID: 1636958988}
   P1_Health_text: {fileID: 1760375959}
   P2_Health_text: {fileID: 1240540687}
+  Damage: {fileID: 0}
   P1_Health_Amount: 10
   P2_Health_Amount: 10
 --- !u!114 &1832113482

@@ -5,6 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+<<<<<<< Updated upstream
   - enabled: 0
     path: Assets/Scenes/C_Combination.unity
     guid: c0a96c899b733724b86f25df4d5e2a45
@@ -18,9 +19,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Kaden Test Scene.unity
     guid: 965b2e9eb4d0ddf4aa46f1ec55c15b5a
   - enabled: 0
-    path: Assets/Scenes/C_Damage Art Scene.unity
-    guid: e8cdc7bfe76afc64083087d3ce14909f
+=======
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: ec2add4400e14a94eb0430e6ed466ace
   - enabled: 1
     path: Assets/Scenes/C_Damage.unity
     guid: 4821031595017bb4fb2f44521301e574
+  - enabled: 1
+>>>>>>> Stashed changes
+    path: Assets/Scenes/C_Damage Art Scene.unity
+    guid: e8cdc7bfe76afc64083087d3ce14909f
   m_configObjects: {}
