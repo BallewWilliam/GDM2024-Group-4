@@ -19,6 +19,10 @@ public class ReadyLight : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        ReadyFunction();
+    }
+    void ReadyFunction()
+    {
         if (spell.Steel1)
         {
             readysquare.color = Color.green;
