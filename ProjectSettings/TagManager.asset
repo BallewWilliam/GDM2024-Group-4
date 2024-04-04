@@ -4,11 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Steel
   - HP
   - HP 2
   - Spell
   - Good Wizard
+  - Element
   layers:
   - Default
   - TransparentFX

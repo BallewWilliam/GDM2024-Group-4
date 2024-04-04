@@ -3,25 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimationControl : MonoBehaviour
-// Instantiate a rigidbody then set the velocity
-
 {
-	// Assign a Rigidbody 2D component in the inspector to instantiate
+	public GameObject elementPrefab; // Prefab of the object to instantiate
+	public Transform elementPosition; // Position to instantiate the object
 
-	public GameObject element;
-	public GameObject elementPosition;
+	public float destroyDelay; // Delay before destroying the instantiated object
+
+	private bool hasElementBeenInstantiated = false; // Flag to track if an element has been instantiated
 
 	void Update()
 	{
-		// Ctrl was pressed, launch a projectile
-		if (Input.GetButtonDown("Element"))
+		// Check if the input button is pressed and an element hasn't been instantiated yet
+		if (Input.GetButtonDown("Element") && !hasElementBeenInstantiated)
 		{
-			
-			Instantiate(element, elementPosition.transform.position, elementPosition.transform.rotation);
-			
-			// Give the cloned object an initial velocity along the current
-			// object's Z axis
-			//clone.velocity = transform.TransformDirection(Vector2.right * 10);
+			// Instantiate the object
+			GameObject newElement = Instantiate(elementPrefab, elementPosition.position, elementPosition.rotation);
+
+			newElement.name = "Tornado";
+
+			// Set the flag to true
+			hasElementBeenInstantiated = true;
+
+			// Start a coroutine to destroy the instantiated object after a delay
+			StartCoroutine(DestroyElement(newElement));
 		}
+	}
+
+	IEnumerator DestroyElement(GameObject element)
+	{
+		// Wait for the specified delay
+		yield return new WaitForSeconds(destroyDelay);
+
+		// Destroy the instantiated object
+		Destroy(element);
+
+		// Reset the flag
+		hasElementBeenInstantiated = false;
 	}
 }
