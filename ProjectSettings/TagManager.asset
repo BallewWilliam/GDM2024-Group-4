@@ -4,11 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Steel
   - HP
   - HP 2
   - Spell
   - Good Wizard
+  - Element
   layers:
   - Default
   - TransparentFX
@@ -43,6 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1830673181
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -51,4 +54,7 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 3228556743
+    locked: 0
+  - name: Tornado
+    uniqueID: 2032252009
     locked: 0
