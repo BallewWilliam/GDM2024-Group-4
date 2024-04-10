@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +11,7 @@ public class MultiplayerManager : MonoBehaviour
     public GameObject P2Assets;
     public GameObject P1ReadyButton;
     public GameObject P2ReadyButton;
-    public Spell_Comparison spell;
+    private Spell_Comparison spell;
     public bool P1Ready;
     public bool P2Ready;
     void Start()
@@ -30,13 +29,11 @@ public class MultiplayerManager : MonoBehaviour
         {
             P1Assets.SetActive(false);
             P2Assets.SetActive(true);
-            P1Ready = false;
         }
         if (P2Ready)
         {
             P2Assets.SetActive(false);
             P1Assets.SetActive(true);
-            P2Ready = false;
         }
 
     }
@@ -119,9 +116,11 @@ public class MultiplayerManager : MonoBehaviour
     public void ReadyButtonP1()
     {
         P1Ready = true;
+        Debug.Log("P1 True!");
     }
     public void ReadyButtonP2()
     {
         P2Ready = true;
+        Debug.Log("P2 True!");
     }
 }

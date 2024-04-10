@@ -4504,7 +4504,6 @@ MonoBehaviour:
   P2Assets: {fileID: 792328466}
   P1ReadyButton: {fileID: 1581357550}
   P2ReadyButton: {fileID: 1701623853}
-  spell: {fileID: 0}
   P1Ready: 0
   P2Ready: 0
 --- !u!114 &1317957855

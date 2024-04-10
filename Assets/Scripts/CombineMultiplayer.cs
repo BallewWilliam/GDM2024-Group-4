@@ -48,9 +48,17 @@ public class CombineMultiplayer : MonoBehaviour
         DisplayP1();
         DisplayP2();
         if (ready.P1Ready)
+        {
+            Debug.Log("Combine 1!");
             CombineP1();
+            ready.P1Ready = false;
+        }
         if (ready.P2Ready)
+        {
+            Debug.Log("Combine 2!");
             CombineP2();
+            ready.P2Ready = false;
+        }
         if (element_1_P1.text == element_2_P1.text)
         {
             P1_element2 = false;
