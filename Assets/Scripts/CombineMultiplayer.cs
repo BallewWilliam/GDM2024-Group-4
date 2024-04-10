@@ -47,6 +47,8 @@ public class CombineMultiplayer : MonoBehaviour
     {
         DisplayP1();
         DisplayP2();
+        readyDisplayP1();
+        readyDisplayP2();
         if (ready.P1Ready)
         {
             Debug.Log("Combine 1!");
@@ -68,42 +70,10 @@ public class CombineMultiplayer : MonoBehaviour
             P2_element2 = false;
         }
     }
-
-    public void DisplayP1()
+    void readyDisplayP1()
     {
-        if (airP1 && waterP1)
+        if (CombinationP1.text != "C")
         {
-            CombinationP1.text = "Storm";
-            readysquare.color = Color.green;
-            P1ReadyButton.SetActive(true);
-        }
-        else if (airP1 && earthP1)
-        {
-            CombinationP1.text = "Tornado";
-            readysquare.color = Color.green;
-            P1ReadyButton.SetActive(true);
-        }
-        else if (airP1 && fireP1)
-        { 
-            CombinationP1.text = "Flamethrower";
-            readysquare.color = Color.green;
-            P1ReadyButton.SetActive(true);
-        }
-        else if (fireP1 && waterP1)
-        {
-            CombinationP1.text = "Steam";
-            readysquare.color = Color.green;
-            P1ReadyButton.SetActive(true);
-        }
-        else if (earthP1 && waterP1)
-        {
-            CombinationP1.text = "Ice";
-            readysquare.color = Color.green;
-            P1ReadyButton.SetActive(true);
-        }
-        else if (earthP1 && fireP1)
-        {
-            CombinationP1.text = "Steel";
             readysquare.color = Color.green;
             P1ReadyButton.SetActive(true);
         }
@@ -113,46 +83,10 @@ public class CombineMultiplayer : MonoBehaviour
             P1ReadyButton.SetActive(false);
         }
     }
-    public void DisplayP2()
+    void readyDisplayP2()
     {
-        if (airP2 && waterP2)
+        if (CombinationP2.text != "C")
         {
-            CombinationP2.text = "Storm";
-            readysquare.color = Color.green;
-            P2ReadyButton.SetActive(true);
-
-        }
-        else if (airP2 && earthP2)
-        {
-            CombinationP2.text = "Tornado";
-            readysquare.color = Color.green;
-            P2ReadyButton.SetActive(true);
-
-        }
-        else if (airP2 && fireP2)
-        {
-            CombinationP2.text = "Flamethrower";
-            readysquare.color = Color.green;
-            P2ReadyButton.SetActive(true);
-
-        }
-        else if (fireP2 && waterP2)
-        {
-            CombinationP2.text = "Steam";
-            readysquare.color = Color.green;
-            P2ReadyButton.SetActive(true);
-
-        }
-        else if (earthP2 && waterP2)
-        {
-            CombinationP2.text = "Ice";
-            readysquare.color = Color.green;
-            P2ReadyButton.SetActive(true);
-
-        }
-        else if (earthP2 && fireP2)
-        {
-            CombinationP2.text = "Steel";
             readysquare.color = Color.green;
             P2ReadyButton.SetActive(true);
         }
@@ -160,6 +94,124 @@ public class CombineMultiplayer : MonoBehaviour
         {
             readysquare.color = Color.white;
             P2ReadyButton.SetActive(false);
+        }
+    }
+    public void DisplayP1()
+    {
+        if (airP1 && waterP1)
+        {
+            CombinationP1.text = "Storm";
+            airP1 = false; 
+            waterP1 = false;
+            P1_element1 = false;
+            P1_element2 = false;
+        }
+        else if (airP1 && earthP1)
+        {
+            CombinationP1.text = "Tornado";
+            
+            airP1 = false;
+            earthP1 = false;
+            P1_element1 = false;
+            P1_element2 = false;
+        }
+        else if (airP1 && fireP1)
+        { 
+            CombinationP1.text = "Flamethrower";
+
+            airP1 = false;
+            fireP1 = false;
+            P1_element1 = false;
+            P1_element2 = false;
+        }
+        else if (fireP1 && waterP1)
+        {
+            CombinationP1.text = "Steam";
+
+            fireP1 = false;
+            waterP1 = false;
+            P1_element1 = false;
+            P1_element2 = false;
+        }
+        else if (earthP1 && waterP1)
+        {
+            CombinationP1.text = "Ice";
+
+            earthP1 = false;
+            waterP1 = false;
+            P1_element1 = false;
+            P1_element2 = false;
+        }
+        else if (earthP1 && fireP1)
+        {
+            CombinationP1.text = "Steel";
+
+            earthP1 = false;
+            fireP1 = false;
+            P1_element1 = false;
+            P1_element2 = false;
+        }
+    }
+    public void DisplayP2()
+    {
+        if (airP2 && waterP2)
+        {
+            CombinationP2.text = "Storm";
+
+            waterP2 = false;
+            airP2 = false;
+            P2_element1 = false;
+            P2_element2 = false;
+
+        }
+        else if (airP2 && earthP2)
+        {
+            CombinationP2.text = "Tornado";
+
+            airP2 = false;
+            earthP2 = false;
+            P2_element1 = false;
+            P2_element2 = false;
+
+        }
+        else if (airP2 && fireP2)
+        {
+            CombinationP2.text = "Flamethrower";
+
+            airP2 = false;
+            fireP2 = false;
+            P2_element1 = false;
+            P2_element2 = false;
+
+        }
+        else if (fireP2 && waterP2)
+        {
+            CombinationP2.text = "Steam";
+
+            fireP2 = false;
+            waterP2 = false;
+            P2_element1 = false;
+            P2_element2 = false;
+
+        }
+        else if (earthP2 && waterP2)
+        {
+            CombinationP2.text = "Ice";
+
+            earthP2 = false;
+            waterP2 = false;
+            P2_element1 = false;
+            P2_element2 = false;
+
+        }
+        else if (earthP2 && fireP2)
+        {
+            CombinationP2.text = "Steel";
+
+            earthP2 = false;
+            fireP2 = false;
+            P2_element1 = false;
+            P2_element2 = false;
         }
     }
     public void PrintFireP1()
@@ -286,9 +338,9 @@ public class CombineMultiplayer : MonoBehaviour
     }
     public void CombineP1()
     {
-        if (airP1 && waterP1)
+        if (CombinationP1.text == "Storm")
         {
-            CombinationP1.text = "Storm";
+            CombinationP1.text = "C";
             spell.Storm1 = true;
             spell.Tornado1 = false;
             spell.Flamethrower1 = false;
@@ -300,9 +352,9 @@ public class CombineMultiplayer : MonoBehaviour
             P1_element1 = false;
             P1_element2 = false;
         }
-        if (airP1 && earthP1)
+        if (CombinationP1.text == "Tornado")
         {
-            CombinationP1.text = "Tornado";
+            CombinationP1.text = "C";
             spell.Tornado1 = true;
             spell.Storm1 = false;
             spell.Flamethrower1 = false;
@@ -314,9 +366,9 @@ public class CombineMultiplayer : MonoBehaviour
             P1_element1 = false;
             P1_element2 = false;
         }
-        if (airP1 && fireP1)
+        if (CombinationP1.text == "Flamethrower")
         {
-            CombinationP1.text = "Flamethrower";
+            CombinationP1.text = "C";
             spell.Flamethrower1 = true;
             spell.Storm1 = false;
             spell.Tornado1 = false;
@@ -328,9 +380,9 @@ public class CombineMultiplayer : MonoBehaviour
             P1_element1 = false;
             P1_element2 = false;
         }
-        if (fireP1 && waterP1)
+        if (CombinationP1.text == "Steam")
         {
-            CombinationP1.text = "Steam";
+            CombinationP1.text = "C";
             spell.Steam1 = true;
             spell.Storm1 = false;
             spell.Tornado1 = false;
@@ -342,9 +394,9 @@ public class CombineMultiplayer : MonoBehaviour
             P1_element1 = false;
             P1_element2 = false;
         }
-        if (earthP1 && waterP1)
+        if (CombinationP1.text == "Ice")
         {
-            CombinationP1.text = "Ice";
+            CombinationP1.text = "C";
             spell.Ice1 = true;
             spell.Storm1 = false;
             spell.Tornado1 = false;
@@ -356,9 +408,9 @@ public class CombineMultiplayer : MonoBehaviour
             P1_element1 = false;
             P1_element2 = false;
         }
-        if (earthP1 && fireP1)
+        if (CombinationP1.text == "Steel")
         {
-            CombinationP1.text = "Steel";
+            CombinationP1.text = "C";
             spell.Steel1 = true;
             spell.Storm1 = false;
             spell.Tornado1 = false;
@@ -373,9 +425,9 @@ public class CombineMultiplayer : MonoBehaviour
     }
     public void CombineP2()
     {
-        if (airP2 && waterP2)
+        if (CombinationP2.text == "Storm")
         {
-            CombinationP2.text = "Storm";
+            CombinationP2.text = "C";
             spell.Storm2 = true;
             spell.Tornado2 = false;
             spell.Flamethrower2 = false;
@@ -387,9 +439,9 @@ public class CombineMultiplayer : MonoBehaviour
             P2_element1 = false;
             P2_element2 = false;
         }
-        if (airP2 && earthP2)
+        if (CombinationP2.text == "Tornado")
         {
-            CombinationP2.text = "Tornado";
+            CombinationP2.text = "C";
             spell.Tornado2 = true;
             spell.Storm2 = false;
             spell.Flamethrower2 = false;
@@ -401,9 +453,9 @@ public class CombineMultiplayer : MonoBehaviour
             P2_element1 = false;
             P2_element2 = false;
         }
-        if (airP2 && fireP2)
+        if (CombinationP2.text == "Flamethrower")
         {
-            CombinationP2.text = "Flamethrower";
+            CombinationP2.text = "C";
             spell.Flamethrower2 = true;
             spell.Storm2 = false;
             spell.Tornado2 = false;
@@ -415,9 +467,9 @@ public class CombineMultiplayer : MonoBehaviour
             P2_element1 = false;
             P2_element2 = false;
         }
-        if (fireP2 && waterP2)
+        if (CombinationP2.text == "Steam")
         {
-            CombinationP2.text = "Steam";
+            CombinationP2.text = "C";
             spell.Steam2 = true;
             spell.Storm2 = false;
             spell.Tornado2 = false;
@@ -429,9 +481,9 @@ public class CombineMultiplayer : MonoBehaviour
             P2_element1 = false;
             P2_element2 = false;
         }
-        if (earthP2 && waterP2)
+        if (CombinationP2.text == "Ice")
         {
-            CombinationP2.text = "Ice";
+            CombinationP2.text = "C";
             spell.Ice2 = true;
             spell.Storm2 = false;
             spell.Tornado2 = false;
@@ -443,9 +495,9 @@ public class CombineMultiplayer : MonoBehaviour
             P2_element1 = false;
             P2_element2 = false;
         }
-        if (earthP2 && fireP2)
+        if (CombinationP2.text == "Steel")
         {
-            CombinationP2.text = "Steel";
+            CombinationP2.text = "C";
             spell.Steel2 = true;
             spell.Storm2 = false;
             spell.Tornado2 = false;
