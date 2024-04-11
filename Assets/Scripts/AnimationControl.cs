@@ -6,6 +6,9 @@ public class AnimationControl : MonoBehaviour
 {
 	public GameObject elementPrefab; // Prefab of the object to instantiate
 	public Transform elementPosition; // Position to instantiate the object
+	public Transform movementPosition;
+
+	public float m_Speed = 0f;
 
 	public float destroyDelay; // Delay before destroying the instantiated object
 
@@ -18,6 +21,8 @@ public class AnimationControl : MonoBehaviour
 		{
 			// Instantiate the object
 			GameObject newElement = Instantiate(elementPrefab, elementPosition.position, elementPosition.rotation);
+			Rigidbody2D elementTransform = newElement.GetComponent<Rigidbody2D>();
+			elementTransform.MovePosition(movementPosition.position * (Time.deltaTime * m_Speed));
 
 			newElement.name = "Tornado";
 
