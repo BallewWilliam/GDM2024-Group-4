@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 423755618628477598}
   - component: {fileID: 3282992182924630890}
   - component: {fileID: 85554612648593438}
-  - component: {fileID: 3351450219215806556}
+  - component: {fileID: 1270959460161221791}
   m_Layer: 5
   m_Name: Tornado
   m_TagString: Element
@@ -120,7 +120,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!50 &3351450219215806556
+--- !u!50 &1270959460161221791
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
