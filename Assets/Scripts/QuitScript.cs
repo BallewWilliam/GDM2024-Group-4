@@ -13,4 +13,8 @@ public class QuitScript : MonoBehaviour
     {
         SceneManager.LoadScene("C_Damage");
     }
+    public void multiplayerRestart()
+    {
+        SceneManager.LoadScene("C_Multiplayer");
+    }
 }

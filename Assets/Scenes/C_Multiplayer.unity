@@ -2930,7 +2930,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1317957845}
         m_TargetAssemblyTypeName: QuitScript, Assembly-CSharp
-        m_MethodName: RestartButton
+        m_MethodName: multiplayerRestart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6566,7 +6566,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1317957845}
         m_TargetAssemblyTypeName: QuitScript, Assembly-CSharp
-        m_MethodName: RestartButton
+        m_MethodName: multiplayerRestart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
