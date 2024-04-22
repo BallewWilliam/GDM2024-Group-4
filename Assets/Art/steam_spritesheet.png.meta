@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9a554fe6e8b5ed24d9b8cf5835a9fead
+guid: 96d3e5370f28ccc44b00c0c948178832
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: storm_spritesheet_0
+      name: steam_spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1425
-        width: 310
-        height: 475
+        y: 833.3334
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f5116b18c4c6a148a4f57dae410a6d6
-      internalID: 1368490774
+      spriteID: ab001e8303308204ca5241f8dac3cef5
+      internalID: 1795709395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_1
+      name: steam_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 310
-        y: 1425
-        width: 310
-        height: 475
+        x: 300
+        y: 833.3334
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcbb8affd5fa5a94a8518c3a08d7ffa2
-      internalID: 48226140
+      spriteID: 19894bd43c685df48a90701e815ca116
+      internalID: -222845618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_2
+      name: steam_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 620
-        y: 1425
-        width: 310
-        height: 475
+        x: 600
+        y: 833.3334
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1fcb67c01ba7704196b59d192f7add5
-      internalID: 903654039
+      spriteID: d39b04d9ac7b2184d90ba04483e62e28
+      internalID: -801772774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_3
+      name: steam_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 930
-        y: 1425
-        width: 310
-        height: 475
+        x: 900
+        y: 833.3334
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e2aa22c5055cff4794c45a7d677f086
-      internalID: 507843339
+      spriteID: 1695929606f202640985a71ed1f6e917
+      internalID: -669281800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_4
+      name: steam_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 1240
-        y: 1425
-        width: 310
-        height: 475
+        x: 1200
+        y: 833.3334
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82df12fd1b2198c4bbe20de6d9ce598e
-      internalID: 53158491
+      spriteID: cf233fd6362861747a2dfdc6b60330b5
+      internalID: -1591382369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_5
+      name: steam_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 950
-        width: 310
-        height: 475
+        x: 1500
+        y: 833.3334
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,104 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f153c3a7554b0d54fac416f9f41e9056
-      internalID: -1150611102
+      spriteID: 61ed0ad49ca56394d84562727c5a8e6f
+      internalID: 758001257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 310
-        y: 950
-        width: 310
-        height: 475
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3ec8c59590dbcb40a6f24659aa4abdf
-      internalID: -182375198
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: storm_spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 620
-        y: 950
-        width: 310
-        height: 475
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c5eac1bf57f9d64ebd126582a400b09
-      internalID: 1384685951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: storm_spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 930
-        y: 950
-        width: 310
-        height: 475
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7c4d71776fa587408d83c983bede1bd
-      internalID: 1668141648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: storm_spritesheet_9
-      rect:
-        serializedVersion: 2
-        x: 1240
-        y: 950
-        width: 310
-        height: 475
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a089fdd33da8134aa7f82c6f9bcfac2
-      internalID: -288676629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: storm_spritesheet_10
+      name: steam_spritesheet_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 475
-        width: 310
-        height: 475
+        y: 417.33334
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fa5334e38631cf45a053fe4afee5728
-      internalID: -1222265860
+      spriteID: 0d15e89b17fa0bc47a66d0048e87cd7f
+      internalID: -479810518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_11
+      name: steam_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 310
-        y: 475
-        width: 310
-        height: 475
+        x: 300
+        y: 417.33334
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 100cbe8f46bcd8549b53b70d753c2f76
-      internalID: 614035627
+      spriteID: b9b26a5f166510243bf3404ab117a979
+      internalID: 635729930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_12
+      name: steam_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 620
-        y: 475
-        width: 310
-        height: 475
+        x: 600
+        y: 417.33334
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5aa7e3d4cf0b014289cfc4cc9272f34
-      internalID: -755603197
+      spriteID: 09065d2d0fdc4f94d9958b0912257fbd
+      internalID: -1009789384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_13
+      name: steam_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 930
-        y: 475
-        width: 310
-        height: 475
+        x: 900
+        y: 417.33334
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c74c3787722563e48b0e8d9dcbdc4c1a
-      internalID: -1513303977
+      spriteID: 55fb344b1045ac54180d577871090743
+      internalID: -1798830518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_14
+      name: steam_spritesheet_10
       rect:
         serializedVersion: 2
-        x: 1240
-        y: 475
-        width: 310
-        height: 475
+        x: 1200
+        y: 417.33334
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,20 +334,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2111ad0158880ce4d9a08e53fcce1166
-      internalID: 1427433577
+      spriteID: 3d94a86e61c0ce44f86f8dac20ffabf3
+      internalID: 1820357432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_15
+      name: steam_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 417.33334
+        width: 300
+        height: 416.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2909ae7902a3edf4185119a63718d245
+      internalID: 683404180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steam_spritesheet_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 310
-        height: 475
+        y: 1.3333435
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,20 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46ae7b3583b23b74dbc52fd2848a6faf
-      internalID: -522713531
+      spriteID: f5449e4730b18524ca4d573a75de25c3
+      internalID: -1551383845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_16
+      name: steam_spritesheet_13
       rect:
         serializedVersion: 2
-        x: 310
-        y: 0
-        width: 310
-        height: 475
+        x: 300
+        y: 1.3333435
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,20 +397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca2d535c6c66ba744a60f2ece9f6c108
-      internalID: 936131072
+      spriteID: 7c5d75521b2124449873993c6e608dc4
+      internalID: -509530423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_17
+      name: steam_spritesheet_14
       rect:
         serializedVersion: 2
-        x: 620
-        y: 0
-        width: 310
-        height: 475
+        x: 600
+        y: 1.3333435
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,20 +418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db6823bbebeaff5418d961a3b6ca8409
-      internalID: 1449035609
+      spriteID: a2471d57a023d804b8dc654a5ff0a2e7
+      internalID: -229142318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_18
+      name: steam_spritesheet_15
       rect:
         serializedVersion: 2
-        x: 930
-        y: 0
-        width: 310
-        height: 475
+        x: 900
+        y: 1.3333435
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,20 +439,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f991fa983826c594499a81132838b7b5
-      internalID: 1953795830
+      spriteID: b10aba937b532264cbce9220d57c2d12
+      internalID: -1235632071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: storm_spritesheet_19
+      name: steam_spritesheet_16
       rect:
         serializedVersion: 2
-        x: 1240
-        y: 0
-        width: 310
-        height: 475
+        x: 1200
+        y: 1.3333435
+        width: 300
+        height: 416.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -523,8 +460,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43a643bd78c3f2b4d8f4904d29fb8d36
-      internalID: 669335504
+      spriteID: c4bcae7374f52914cb6164b8c1041ec3
+      internalID: -1503550181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steam_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1.3333435
+        width: 300
+        height: 416.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4469b359ae0d1e41aaf12762ffed659
+      internalID: -307237884
       vertices: []
       indices: 
       edges: []
@@ -540,26 +498,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      storm_spritesheet_0: 1368490774
-      storm_spritesheet_1: 48226140
-      storm_spritesheet_10: -1222265860
-      storm_spritesheet_11: 614035627
-      storm_spritesheet_12: -755603197
-      storm_spritesheet_13: -1513303977
-      storm_spritesheet_14: 1427433577
-      storm_spritesheet_15: -522713531
-      storm_spritesheet_16: 936131072
-      storm_spritesheet_17: 1449035609
-      storm_spritesheet_18: 1953795830
-      storm_spritesheet_19: 669335504
-      storm_spritesheet_2: 903654039
-      storm_spritesheet_3: 507843339
-      storm_spritesheet_4: 53158491
-      storm_spritesheet_5: -1150611102
-      storm_spritesheet_6: -182375198
-      storm_spritesheet_7: 1384685951
-      storm_spritesheet_8: 1668141648
-      storm_spritesheet_9: -288676629
+      steam_spritesheet_0: 1795709395
+      steam_spritesheet_1: -222845618
+      steam_spritesheet_10: 1820357432
+      steam_spritesheet_11: 683404180
+      steam_spritesheet_12: -1551383845
+      steam_spritesheet_13: -509530423
+      steam_spritesheet_14: -229142318
+      steam_spritesheet_15: -1235632071
+      steam_spritesheet_16: -1503550181
+      steam_spritesheet_17: -307237884
+      steam_spritesheet_2: -801772774
+      steam_spritesheet_3: -669281800
+      steam_spritesheet_4: -1591382369
+      steam_spritesheet_5: 758001257
+      steam_spritesheet_6: -479810518
+      steam_spritesheet_7: 635729930
+      steam_spritesheet_8: -1009789384
+      steam_spritesheet_9: -1798830518
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
