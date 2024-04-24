@@ -15,6 +15,6 @@ public class QuitScript : MonoBehaviour
     }
     public void multiplayerRestart()
     {
-        SceneManager.LoadScene("C_Multiplayer");
+        SceneManager.LoadScene("Multiplayer_Versus");
     }
 }
