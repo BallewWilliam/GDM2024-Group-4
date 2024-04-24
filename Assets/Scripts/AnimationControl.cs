@@ -13,6 +13,7 @@ public class AnimationControl : MonoBehaviour
 
 	public GameObject Manager;
 	private Spell_Comparison spell;
+    private MultiplayerManager multiplayer;
 
 	public float elementSpeed = 0f;
 
@@ -22,11 +23,12 @@ public class AnimationControl : MonoBehaviour
     private void Start()
     {
         spell = Manager.GetComponent<Spell_Comparison>();
+        multiplayer = Manager.GetComponent<MultiplayerManager>();
     }
     void FixedUpdate()
 	{
 		// Check if the input button is pressed and an element hasn't been instantiated yet
-		if (spell.Tornado1 && !hasElementBeenInstantiated)
+		if ((spell.Tornado1 && multiplayer.P2Ready) && !hasElementBeenInstantiated)
 		{
 			// Instantiate the object
 			GameObject newElement = Instantiate(TornadoPrefab, transform.position, transform.rotation);
@@ -41,7 +43,7 @@ public class AnimationControl : MonoBehaviour
 			// Start a coroutine to destroy the instantiated object after a delay
 			StartCoroutine(DestroyElement(newElement));
 		}
-        if (spell.Steel1 && !hasElementBeenInstantiated)
+        if ((spell.Steel1 && multiplayer.P2Ready) && !hasElementBeenInstantiated)
         {
             // Instantiate the object
             GameObject newElement = Instantiate(SteelPrefab, transform.position, transform.rotation);
@@ -56,7 +58,7 @@ public class AnimationControl : MonoBehaviour
             // Start a coroutine to destroy the instantiated object after a delay
             StartCoroutine(DestroyElement(newElement));
         }
-        if (spell.Steam1 && !hasElementBeenInstantiated)
+        if ((spell.Steam1 && multiplayer.P2Ready) && !hasElementBeenInstantiated)
         {
             // Instantiate the object
             GameObject newElement = Instantiate(SteamPrefab, transform.position, transform.rotation);
@@ -71,7 +73,7 @@ public class AnimationControl : MonoBehaviour
             // Start a coroutine to destroy the instantiated object after a delay
             StartCoroutine(DestroyElement(newElement));
         }
-        if (spell.Ice1 && !hasElementBeenInstantiated)
+        if ((spell.Ice1 && multiplayer.P2Ready) && !hasElementBeenInstantiated)
         {
             // Instantiate the object
             GameObject newElement = Instantiate(IcePrefab, transform.position, transform.rotation);
@@ -86,7 +88,7 @@ public class AnimationControl : MonoBehaviour
             // Start a coroutine to destroy the instantiated object after a delay
             StartCoroutine(DestroyElement(newElement));
         }
-        if (spell.Storm1 && !hasElementBeenInstantiated)
+        if ((spell.Storm1 && multiplayer.P2Ready) && !hasElementBeenInstantiated)
         {
             // Instantiate the object
             GameObject newElement = Instantiate(StormPrefab, transform.position, transform.rotation);
@@ -101,7 +103,7 @@ public class AnimationControl : MonoBehaviour
             // Start a coroutine to destroy the instantiated object after a delay
             StartCoroutine(DestroyElement(newElement));
         }
-        if (spell.Flamethrower1 && !hasElementBeenInstantiated)
+        if ((spell.Flamethrower1 && multiplayer.P2Ready) && !hasElementBeenInstantiated)
         {
             // Instantiate the object
             GameObject newElement = Instantiate(FlamethrowerPrefab, transform.position, transform.rotation);
