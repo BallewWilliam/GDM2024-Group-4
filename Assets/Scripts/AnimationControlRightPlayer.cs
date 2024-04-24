@@ -31,7 +31,7 @@ public class AnimationControlRightPlayer : MonoBehaviour
             // Instantiate the object
             GameObject newElement = Instantiate(TornadoPrefab, transform.position, transform.rotation);
             Rigidbody2D elementTransform = newElement.GetComponent<Rigidbody2D>();
-            elementTransform.velocity = -transform.right * elementSpeed;
+            elementTransform.velocity = (transform.right * -1) * elementSpeed;
 
             newElement.name = "Tornado";
 
