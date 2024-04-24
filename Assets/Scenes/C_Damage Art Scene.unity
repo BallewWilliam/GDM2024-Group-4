@@ -524,13 +524,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9175f8600178229428580d894aa6d885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TornadoPrefab: {fileID: 0}
-  SteelPrefab: {fileID: 0}
-  SteamPrefab: {fileID: 0}
-  IcePrefab: {fileID: 0}
-  StormPrefab: {fileID: 0}
-  FlamethrowerPrefab: {fileID: 0}
-  Manager: {fileID: 0}
+  TornadoPrefab: {fileID: 8922522617887928304, guid: a27ad62be55ce2f4ba95a14559a896e5, type: 3}
+  SteelPrefab: {fileID: 7478344313938070817, guid: 36844d27fbad9d643933c7c5de2c0c58, type: 3}
+  SteamPrefab: {fileID: 7478344313938070817, guid: 379a6c592dd36954a959c85aa2639107, type: 3}
+  IcePrefab: {fileID: 7478344313938070817, guid: 1e9147145ee8bda4e8738a737ccac357, type: 3}
+  StormPrefab: {fileID: 7478344313938070817, guid: 5ebefd28b5c5434479811b80c83f703e, type: 3}
+  FlamethrowerPrefab: {fileID: 7478344313938070817, guid: 04f860419cd4f0f409ec9d316f8d0393, type: 3}
+  Manager: {fileID: 1832469209}
   elementSpeed: 2
   destroyDelay: 3
 --- !u!1 &1368552687 stripped
@@ -715,6 +715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1438510500}
   - component: {fileID: 1438510499}
+  - component: {fileID: 1438510501}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -789,6 +790,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1438510501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438510498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb69de447ed99d9488b7c3ffd597227b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TornadoPrefab: {fileID: 8922522617887928304, guid: a27ad62be55ce2f4ba95a14559a896e5, type: 3}
+  SteelPrefab: {fileID: 7478344313938070817, guid: 36844d27fbad9d643933c7c5de2c0c58, type: 3}
+  SteamPrefab: {fileID: 7478344313938070817, guid: 379a6c592dd36954a959c85aa2639107, type: 3}
+  IcePrefab: {fileID: 7478344313938070817, guid: 1e9147145ee8bda4e8738a737ccac357, type: 3}
+  StormPrefab: {fileID: 7478344313938070817, guid: 5ebefd28b5c5434479811b80c83f703e, type: 3}
+  FlamethrowerPrefab: {fileID: 7478344313938070817, guid: 04f860419cd4f0f409ec9d316f8d0393, type: 3}
+  Manager: {fileID: 1832469209}
+  elementSpeed: 2
+  destroyDelay: 3
 --- !u!1001 &1616935815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1363,12 +1385,17 @@ MonoBehaviour:
   waterP2: 0
   fireP2: 0
   earthP2: 0
+--- !u!1 &1832469209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4168625143480875132, guid: e55d623854b36ab4ea55579c4d547a98, type: 3}
+  m_PrefabInstance: {fileID: 513710175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1832469210 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9116569395940489546, guid: e55d623854b36ab4ea55579c4d547a98, type: 3}
   m_PrefabInstance: {fileID: 513710175}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1832469209}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f81f688205c1a24597424d646ab18cc, type: 3}
@@ -1379,7 +1406,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7974926110488561388, guid: e55d623854b36ab4ea55579c4d547a98, type: 3}
   m_PrefabInstance: {fileID: 513710175}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1832469209}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0a7d3df9d372a348ac9475a75f30a2f, type: 3}
@@ -1390,7 +1417,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7295266876977024391, guid: e55d623854b36ab4ea55579c4d547a98, type: 3}
   m_PrefabInstance: {fileID: 513710175}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1832469209}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aadb69f28077e7042917247b70f098b7, type: 3}
