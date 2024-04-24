@@ -11,7 +11,7 @@ public class QuitScript : MonoBehaviour
     }
     public void RestartButton()
     {
-        SceneManager.LoadScene("C_Damage");
+        SceneManager.LoadScene("C_Damage Art Scene");
     }
     public void multiplayerRestart()
     {
