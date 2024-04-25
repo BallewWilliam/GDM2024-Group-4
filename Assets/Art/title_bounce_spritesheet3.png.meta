@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8214d579bbd697244b05f44c599fb369
+guid: b721879275eefef468ee5f37d517a35c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,91 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: title_bounce_spritesheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 400
-        width: 500
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5f1b9197a7ba4b4c8a8161abaa8e06f
-      internalID: 911844530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: title_bounce_spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 400
-        width: 500
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5b1584f19a5db444864f165a6e4cb70
-      internalID: 1791855689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: title_bounce_spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 400
-        width: 500
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38d82d29023903c41a7357750977f226
-      internalID: 2005201058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: title_bounce_spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 400
-        width: 500
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef413227f367b934ebeaea9db1d84c40
-      internalID: -1069873820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: title_bounce_spritesheet_4
+      name: title_bounce_spritesheet3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -208,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bc7f7b936f0bee40b46bd1658cc618b
-      internalID: 1937936989
+      spriteID: a13f24050c8f49a4db8be009bf61d3f4
+      internalID: -1274472304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: title_bounce_spritesheet_5
+      name: title_bounce_spritesheet3_1
       rect:
         serializedVersion: 2
         x: 500
@@ -229,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50dea77769372e348bea47feb4c8bcda
-      internalID: 780553212
+      spriteID: 0045652cd1c81fa4e8a38a1d2264eb8b
+      internalID: -1919678295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: title_bounce_spritesheet_6
+      name: title_bounce_spritesheet3_2
       rect:
         serializedVersion: 2
         x: 1000
@@ -250,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b2e26377726b9945a3c62059a62b138
-      internalID: 508410179
+      spriteID: 6d8e14e0d5b97f346bca07d45b152457
+      internalID: 1929552488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: title_bounce_spritesheet_7
+      name: title_bounce_spritesheet3_3
       rect:
         serializedVersion: 2
         x: 1500
@@ -271,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c14317be8474c94dbe47333a0e1a66d
-      internalID: 2064203581
+      spriteID: 6b964be322ae1ec4188cd025337c7fc0
+      internalID: -316242758
       vertices: []
       indices: 
       edges: []
@@ -288,14 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      title_bounce_spritesheet_0: 911844530
-      title_bounce_spritesheet_1: 1791855689
-      title_bounce_spritesheet_2: 2005201058
-      title_bounce_spritesheet_3: -1069873820
-      title_bounce_spritesheet_4: 1937936989
-      title_bounce_spritesheet_5: 780553212
-      title_bounce_spritesheet_6: 508410179
-      title_bounce_spritesheet_7: 2064203581
+      title_bounce_spritesheet3_0: -1274472304
+      title_bounce_spritesheet3_1: -1919678295
+      title_bounce_spritesheet3_2: 1929552488
+      title_bounce_spritesheet3_3: -316242758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
