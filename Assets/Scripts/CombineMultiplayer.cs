@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Timeline;
 
 
 public class CombineMultiplayer : MonoBehaviour
@@ -17,6 +18,12 @@ public class CombineMultiplayer : MonoBehaviour
     public TMP_Text CombinationP2;
     public TMP_Text element_1_P2;
     public TMP_Text element_2_P2;
+    public AudioSource StormSound;
+    public AudioSource SteamSound;
+    public AudioSource SteelSound;
+    public AudioSource IceSound;
+    public AudioSource FlamethrowerSound;
+    public AudioSource TornadoSound;
     public GameObject Manager;
     private Spell_Comparison spell;
     private MultiplayerManager ready;
@@ -341,6 +348,7 @@ public class CombineMultiplayer : MonoBehaviour
         if (CombinationP1.text == "Storm")
         {
             CombinationP1.text = "C";
+
             spell.Storm1 = true;
             spell.Tornado1 = false;
             spell.Flamethrower1 = false;
@@ -442,6 +450,7 @@ public class CombineMultiplayer : MonoBehaviour
         if (CombinationP2.text == "Tornado")
         {
             CombinationP2.text = "C";
+            Debug.Log("T2 True!");
             spell.Tornado2 = true;
             spell.Storm2 = false;
             spell.Flamethrower2 = false;

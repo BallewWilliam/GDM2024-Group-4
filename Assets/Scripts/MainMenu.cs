@@ -7,11 +7,11 @@ public class MainMenu : MonoBehaviour
 {
     public void SingleplayerButton()
     {
-        SceneManager.LoadScene("C_Damage");
+        SceneManager.LoadScene("Singleplayer_Versus");
     }
     public void MultiplayerButton()
     {
-        SceneManager.LoadScene("C_Multiplayer");
+        SceneManager.LoadScene("Multiplayer_Versus");
     }
 
     public void QuitGame()

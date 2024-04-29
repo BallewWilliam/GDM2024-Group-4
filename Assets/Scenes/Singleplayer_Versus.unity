@@ -1138,138 +1138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1832113477
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1832113480}
-  - component: {fileID: 1832113479}
-  - component: {fileID: 1832113478}
-  - component: {fileID: 1832113481}
-  - component: {fileID: 1832113482}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1832113478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832113477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1832113479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832113477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1832113480
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832113477}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1832113481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832113477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03801a23a5f3b4f439f6c631d6164d43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Steel1: 0
-  Steel2: 0
-  Tornado1: 0
-  Tornado2: 0
-  Steam1: 0
-  Steam2: 0
-  Flamethrower1: 0
-  Flamethrower2: 0
-  Ice1: 0
-  Ice2: 0
-  Storm1: 0
-  Storm2: 0
-  P1_Health: {fileID: 0}
-  P2_Health: {fileID: 0}
-  P1_Health_text: {fileID: 0}
-  P2_Health_text: {fileID: 0}
-  Damage: {fileID: 0}
-  P1_Health_Amount: 10
-  P2_Health_Amount: 10
---- !u!114 &1832113482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832113477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aadb69f28077e7042917247b70f098b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CombinationP1: {fileID: 0}
-  element_1_P1: {fileID: 0}
-  element_2_P1: {fileID: 0}
-  CombinationP2: {fileID: 0}
-  element_1_P2: {fileID: 0}
-  element_2_P2: {fileID: 0}
-  Manager: {fileID: 1832113477}
-  P1_element1: 0
-  P1_element2: 0
-  P2_element1: 0
-  P2_element2: 0
-  airP1: 0
-  waterP1: 0
-  fireP1: 0
-  earthP1: 0
-  airP2: 0
-  waterP2: 0
-  fireP2: 0
-  earthP2: 0
 --- !u!1 &1832469209 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4168625143480875132, guid: e55d623854b36ab4ea55579c4d547a98, type: 3}
@@ -1320,6 +1188,10 @@ PrefabInstance:
       propertyPath: Manager
       value: 
       objectReference: {fileID: 1832469209}
+    - target: {fileID: 61235969165713632, guid: 9178659618c9bb2468f9bb8bb20b64e1, type: 3}
+      propertyPath: elementSpeed
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 4244358547189377041, guid: 9178659618c9bb2468f9bb8bb20b64e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.99
@@ -1425,17 +1297,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3953384362019687640, guid: 84d588a9fc0971d44926fef792dd4f50, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1332860843212802697, guid: 84d588a9fc0971d44926fef792dd4f50, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3549348203476717741}
   m_SourcePrefab: {fileID: 100100000, guid: 84d588a9fc0971d44926fef792dd4f50, type: 3}
+--- !u!1 &3549348203476717740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1332860843212802697, guid: 84d588a9fc0971d44926fef792dd4f50, type: 3}
+  m_PrefabInstance: {fileID: 3549348203476717739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3549348203476717741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3549348203476717740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e91685634bec74f4d87878ecbb0451a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TornadoPrefab: {fileID: 8922522617887928304, guid: a27ad62be55ce2f4ba95a14559a896e5, type: 3}
+  SteelPrefab: {fileID: 7478344313938070817, guid: 36844d27fbad9d643933c7c5de2c0c58, type: 3}
+  SteamPrefab: {fileID: 7478344313938070817, guid: 379a6c592dd36954a959c85aa2639107, type: 3}
+  IcePrefab: {fileID: 7478344313938070817, guid: 1e9147145ee8bda4e8738a737ccac357, type: 3}
+  StormPrefab: {fileID: 7478344313938070817, guid: 5ebefd28b5c5434479811b80c83f703e, type: 3}
+  FlamethrowerPrefab: {fileID: 7478344313938070817, guid: 04f860419cd4f0f409ec9d316f8d0393, type: 3}
+  Manager: {fileID: 1832469209}
+  elementSpeed: 2
+  destroyDelay: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1413135525}
-  - {fileID: 1832113480}
   - {fileID: 3549348203476717739}
   - {fileID: 2173439615215133474}
   - {fileID: 1616935815}
