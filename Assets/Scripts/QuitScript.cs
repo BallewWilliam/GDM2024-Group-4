@@ -17,4 +17,8 @@ public class QuitScript : MonoBehaviour
     {
         SceneManager.LoadScene("Multiplayer_Versus");
     }
+    public void CreditsExit()
+    {
+        SceneManager.LoadScene("Main_Menu");
+    }
 }

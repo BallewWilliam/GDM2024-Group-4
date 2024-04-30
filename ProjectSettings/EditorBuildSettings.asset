@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
+    path: Assets/Scenes/Main_Menu.unity
     guid: ec2add4400e14a94eb0430e6ed466ace
   - enabled: 0
     path: Assets/Scenes/C_Damage.unity
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Singleplayer_Versus.unity
     guid: e8cdc7bfe76afc64083087d3ce14909f
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: a92613fd484050848af3fd9552b87c77
   m_configObjects: {}

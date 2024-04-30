@@ -13,6 +13,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Multiplayer_Versus");
     }
+    public void CreditsButton()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 
     public void QuitGame()
     {
